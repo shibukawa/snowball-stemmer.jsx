@@ -1,6 +1,8 @@
 snowball-stemmer.jsx
 ===========================================
 
+[![Build Status](https://travis-ci.org/shibukawa/snowball-stemmer.jsx.png)](https://travis-ci.org/shibukawa/snowball-stemmer.jsx)
+
 Synopsis
 ---------------
 
@@ -78,6 +80,26 @@ Installation
 ```sh
 $ npm install snowball-stemmer.jsx
 ```
+
+If you want to use this library from other JSX project, install like the following:
+
+```sh
+$ npm install snowball-stemmer.jsx --save-dev
+```
+
+or add like these lines to your parent project's `package.json`:
+
+```js
+   devDependencies: {
+       "snowball-stemmer.jsx": "~0.2.0"
+   },
+   peerDepenencies: {
+       "snowball-stemmer.jsx": "~0.2.0"
+   }
+```
+
+And add `node_modules/snowball-stemmer.jsx/src` as a search path.
+You should add to `peerDepenencies` if your product is library.
 
 API Reference
 ------------------

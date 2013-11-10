@@ -1,11 +1,11 @@
 {
   "name": "snowball-stemmer.jsx",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "This is a collection of stemmers for JSX/JS/AMD/Common.js.",
   "scripts": {
-    "build": "grunt build",
-    "test": "grunt test",
-    "doc": "grunt doc"
+    "build": "./node_modules/.bin/grunt build",
+    "test": "./node_modules/.bin/grunt test",
+    "doc": "./node_modules/.bin/grunt doc"
   },
   "engines" : { "node" : ">=0.8.0" },
   "keywords": [
@@ -36,14 +36,14 @@
     "Swedish",
     "Turkish"
   ],
-  "main": "./lib/snowball-stemmer.jsx",
+  "main": "./src/snowball-stemmer.jsx",
   "homepage": "https://github.com/shibukawa/snowball-stemmer.jsx",
   "bugs": {
     "url": "https://github.com/shibukawa/snowball-stemmer.jsx/issues"
   },
   "directories": {
     "doc": "./doc",
-    "lib": "./lib",
+    "lib": "./src",
     "test": "./test"
   },
   "repository": {
@@ -53,7 +53,8 @@
   "devDependencies": {
     "grunt-contrib-watch": "~0.5.3",
     "grunt": "~0.4.1",
-    "grunt-jsx": ">=0.1.5"
+    "grunt-jsx": ">=0.1.5",
+    "grunt-cli": "~0.1.10"
   },
   "author": "shibukawa",
   "license": "MIT"

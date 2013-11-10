@@ -4,7 +4,7 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     sampleDir: "samples",
-    libDir: "lib",
+    libDir: "src",
     destDir: "dest",
     testDir: "test",
     docDir: "doc",
@@ -29,10 +29,10 @@ module.exports = function(grunt) {
       },
 
       commonjs: {
-        src: ['lib/danish-stemmer.jsx', 'lib/dutch-stemmer.jsx', 'lib/english-stemmer.jsx', 'lib/finnish-stemmer.jsx', 'lib/french-stemmer.jsx',
-              'lib/german-stemmer.jsx', 'lib/hungarian-stemmer.jsx', 'lib/italian-stemmer.jsx', 'lib/norwegian-stemmer.jsx', 'lib/porter-stemmer.jsx',
-              'lib/portuguese-stemmer.jsx', 'lib/romanian-stemmer.jsx', 'lib/russian-stemmer.jsx', 'lib/spanish-stemmer.jsx', 'lib/swedish-stemmer.jsx',
-              'lib/turkish-stemmer.jsx'],
+        src: ['src/danish-stemmer.jsx', 'src/dutch-stemmer.jsx', 'src/english-stemmer.jsx', 'src/finnish-stemmer.jsx', 'src/french-stemmer.jsx',
+              'src/german-stemmer.jsx', 'src/hungarian-stemmer.jsx', 'src/italian-stemmer.jsx', 'src/norwegian-stemmer.jsx', 'src/porter-stemmer.jsx',
+              'src/portuguese-stemmer.jsx', 'src/romanian-stemmer.jsx', 'src/russian-stemmer.jsx', 'src/spanish-stemmer.jsx', 'src/swedish-stemmer.jsx',
+              'src/turkish-stemmer.jsx'],
         output_rule: {
             regexp: /lib\/(.+)\.jsx/,
             replace: 'dest\/$1.common.js'
@@ -44,10 +44,10 @@ module.exports = function(grunt) {
       },
 
       amd: {
-        src: ['lib/danish-stemmer.jsx', 'lib/dutch-stemmer.jsx', 'lib/english-stemmer.jsx', 'lib/finnish-stemmer.jsx', 'lib/french-stemmer.jsx',
-              'lib/german-stemmer.jsx', 'lib/hungarian-stemmer.jsx', 'lib/italian-stemmer.jsx', 'lib/norwegian-stemmer.jsx', 'lib/porter-stemmer.jsx',
-              'lib/portuguese-stemmer.jsx', 'lib/romanian-stemmer.jsx', 'lib/russian-stemmer.jsx', 'lib/spanish-stemmer.jsx', 'lib/swedish-stemmer.jsx',
-              'lib/turkish-stemmer.jsx'],
+        src: ['src/danish-stemmer.jsx', 'src/dutch-stemmer.jsx', 'src/english-stemmer.jsx', 'src/finnish-stemmer.jsx', 'src/french-stemmer.jsx',
+              'src/german-stemmer.jsx', 'src/hungarian-stemmer.jsx', 'src/italian-stemmer.jsx', 'src/norwegian-stemmer.jsx', 'src/porter-stemmer.jsx',
+              'src/portuguese-stemmer.jsx', 'src/romanian-stemmer.jsx', 'src/russian-stemmer.jsx', 'src/spanish-stemmer.jsx', 'src/swedish-stemmer.jsx',
+              'src/turkish-stemmer.jsx'],
         output_rule: {
             regexp: /lib\/(.+)\.jsx/,
             replace: 'dest\/$1.amd.js'
@@ -59,10 +59,10 @@ module.exports = function(grunt) {
       },
 
       closure: {
-        src: ['lib/danish-stemmer.jsx', 'lib/dutch-stemmer.jsx', 'lib/english-stemmer.jsx', 'lib/finnish-stemmer.jsx', 'lib/french-stemmer.jsx',
-              'lib/german-stemmer.jsx', 'lib/hungarian-stemmer.jsx', 'lib/italian-stemmer.jsx', 'lib/norwegian-stemmer.jsx', 'lib/porter-stemmer.jsx',
-              'lib/portuguese-stemmer.jsx', 'lib/romanian-stemmer.jsx', 'lib/russian-stemmer.jsx', 'lib/spanish-stemmer.jsx', 'lib/swedish-stemmer.jsx',
-              'lib/turkish-stemmer.jsx'],
+        src: ['src/danish-stemmer.jsx', 'src/dutch-stemmer.jsx', 'src/english-stemmer.jsx', 'src/finnish-stemmer.jsx', 'src/french-stemmer.jsx',
+              'src/german-stemmer.jsx', 'src/hungarian-stemmer.jsx', 'src/italian-stemmer.jsx', 'src/norwegian-stemmer.jsx', 'src/porter-stemmer.jsx',
+              'src/portuguese-stemmer.jsx', 'src/romanian-stemmer.jsx', 'src/russian-stemmer.jsx', 'src/spanish-stemmer.jsx', 'src/swedish-stemmer.jsx',
+              'src/turkish-stemmer.jsx'],
         output_rule: {
             regexp: /lib\/(.+)\.jsx/,
             replace: 'dest\/$1.closure.js'
@@ -74,10 +74,10 @@ module.exports = function(grunt) {
       },
 
       global: {
-        src: ['lib/danish-stemmer.jsx', 'lib/dutch-stemmer.jsx', 'lib/english-stemmer.jsx', 'lib/finnish-stemmer.jsx', 'lib/french-stemmer.jsx',
-              'lib/german-stemmer.jsx', 'lib/hungarian-stemmer.jsx', 'lib/italian-stemmer.jsx', 'lib/norwegian-stemmer.jsx', 'lib/porter-stemmer.jsx',
-              'lib/portuguese-stemmer.jsx', 'lib/romanian-stemmer.jsx', 'lib/russian-stemmer.jsx', 'lib/spanish-stemmer.jsx', 'lib/swedish-stemmer.jsx',
-              'lib/turkish-stemmer.jsx'],
+        src: ['src/danish-stemmer.jsx', 'src/dutch-stemmer.jsx', 'src/english-stemmer.jsx', 'src/finnish-stemmer.jsx', 'src/french-stemmer.jsx',
+              'src/german-stemmer.jsx', 'src/hungarian-stemmer.jsx', 'src/italian-stemmer.jsx', 'src/norwegian-stemmer.jsx', 'src/porter-stemmer.jsx',
+              'src/portuguese-stemmer.jsx', 'src/romanian-stemmer.jsx', 'src/russian-stemmer.jsx', 'src/spanish-stemmer.jsx', 'src/swedish-stemmer.jsx',
+              'src/turkish-stemmer.jsx'],
         output_rule: {
             regexp: /lib\/(.+)\.jsx/,
             replace: 'dest\/$1.global.js'
@@ -89,10 +89,10 @@ module.exports = function(grunt) {
       },
 
       standard: {
-        src: ['lib/danish-stemmer.jsx', 'lib/dutch-stemmer.jsx', 'lib/english-stemmer.jsx', 'lib/finnish-stemmer.jsx', 'lib/french-stemmer.jsx',
-              'lib/german-stemmer.jsx', 'lib/hungarian-stemmer.jsx', 'lib/italian-stemmer.jsx', 'lib/norwegian-stemmer.jsx', 'lib/porter-stemmer.jsx',
-              'lib/portuguese-stemmer.jsx', 'lib/romanian-stemmer.jsx', 'lib/russian-stemmer.jsx', 'lib/spanish-stemmer.jsx', 'lib/swedish-stemmer.jsx',
-              'lib/turkish-stemmer.jsx'],
+        src: ['src/danish-stemmer.jsx', 'src/dutch-stemmer.jsx', 'src/english-stemmer.jsx', 'src/finnish-stemmer.jsx', 'src/french-stemmer.jsx',
+              'src/german-stemmer.jsx', 'src/hungarian-stemmer.jsx', 'src/italian-stemmer.jsx', 'src/norwegian-stemmer.jsx', 'src/porter-stemmer.jsx',
+              'src/portuguese-stemmer.jsx', 'src/romanian-stemmer.jsx', 'src/russian-stemmer.jsx', 'src/spanish-stemmer.jsx', 'src/swedish-stemmer.jsx',
+              'src/turkish-stemmer.jsx'],
         output_rule: {
             regexp: /lib\/(.+)\.jsx/,
             replace: 'dest\/$1.js'
@@ -131,7 +131,7 @@ module.exports = function(grunt) {
     'jsx:standard',
     'jsx:global'
   ]);
-  grunt.registerTask('test', ['jsx:test']);
+  grunt.registerTask('sample', ['jsx:sample']);
   grunt.registerTask('doc', ['jsx:doc']);
 };
 // vim: set expandtab tabstop=2 shiftwidth=2:
