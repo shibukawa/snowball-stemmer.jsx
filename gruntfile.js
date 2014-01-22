@@ -34,7 +34,7 @@ module.exports = function(grunt) {
               'src/portuguese-stemmer.jsx', 'src/romanian-stemmer.jsx', 'src/russian-stemmer.jsx', 'src/spanish-stemmer.jsx', 'src/swedish-stemmer.jsx',
               'src/turkish-stemmer.jsx'],
         output_rule: {
-            regexp: /lib\/(.+)\.jsx/,
+            regexp: /src\/(.+)\.jsx/,
             replace: 'dest\/$1.common.js'
         },
         add_search_path: ['<%= libDir %>'],
@@ -49,7 +49,7 @@ module.exports = function(grunt) {
               'src/portuguese-stemmer.jsx', 'src/romanian-stemmer.jsx', 'src/russian-stemmer.jsx', 'src/spanish-stemmer.jsx', 'src/swedish-stemmer.jsx',
               'src/turkish-stemmer.jsx'],
         output_rule: {
-            regexp: /lib\/(.+)\.jsx/,
+            regexp: /src\/(.+)\.jsx/,
             replace: 'dest\/$1.amd.js'
         },
         add_search_path: ['<%= libDir %>'],
@@ -64,12 +64,12 @@ module.exports = function(grunt) {
               'src/portuguese-stemmer.jsx', 'src/romanian-stemmer.jsx', 'src/russian-stemmer.jsx', 'src/spanish-stemmer.jsx', 'src/swedish-stemmer.jsx',
               'src/turkish-stemmer.jsx'],
         output_rule: {
-            regexp: /lib\/(.+)\.jsx/,
+            regexp: /src\/(.+)\.jsx/,
             replace: 'dest\/$1.closure.js'
         },
         add_search_path: ['<%= libDir %>'],
         minify: false,
-        release: false,
+        release: true,
         linker: 'closure-lib'
       },
 
@@ -79,12 +79,12 @@ module.exports = function(grunt) {
               'src/portuguese-stemmer.jsx', 'src/romanian-stemmer.jsx', 'src/russian-stemmer.jsx', 'src/spanish-stemmer.jsx', 'src/swedish-stemmer.jsx',
               'src/turkish-stemmer.jsx'],
         output_rule: {
-            regexp: /lib\/(.+)\.jsx/,
+            regexp: /src\/(.+)\.jsx/,
             replace: 'dest\/$1.global.js'
         },
         add_search_path: ['<%= libDir %>'],
-        minify: false,
-        release: false,
+        minify: true,
+        release: true,
         linker: 'export-global'
       },
 
@@ -94,7 +94,7 @@ module.exports = function(grunt) {
               'src/portuguese-stemmer.jsx', 'src/romanian-stemmer.jsx', 'src/russian-stemmer.jsx', 'src/spanish-stemmer.jsx', 'src/swedish-stemmer.jsx',
               'src/turkish-stemmer.jsx'],
         output_rule: {
-            regexp: /lib\/(.+)\.jsx/,
+            regexp: /src\/(.+)\.jsx/,
             replace: 'dest\/$1.js'
         },
         add_search_path: ['<%= libDir %>'],
