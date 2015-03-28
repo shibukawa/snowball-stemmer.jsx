@@ -1,3 +1,6 @@
 node_modules
 *.tgz
+*.tar.gz
+deploy.sh
 .*.swp
+snowball-stemmer

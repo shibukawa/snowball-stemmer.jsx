@@ -53,7 +53,7 @@ define(['german-stemmer.jsx'], function (germanstemmer) {
 ### Use via standard JSX function
 
 ```html
-<script src="spanish-stemmer.js}}" type="text/javascript"></script>
+<script src="spanish-stemmer.js" type="text/javascript"></script>
 <script type="text/javascript">
 window.onload = function () {
     var SpanishStemmer = JSX.require("lib/spanish-stemmer.js").SpanishStemmer;
@@ -65,7 +65,7 @@ window.onload = function () {
 ### Use via global variables
 
 ```html
-<script src="snowball-stemmer.global.js}}" type="text/javascript"></script>
+<script src="snowball-stemmer.global.js" type="text/javascript"></script>
 <script type="text/javascript">
 window.onload = function () {
     var RussianStemmer = new RussianStemmer();

@@ -1,4 +1,7 @@
 ## ignore ##
 /node_modules/
 /doc/
-
+*.tar.gz
+.*.swp
+dest
+snowball-stemmer
