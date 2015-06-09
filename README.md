@@ -38,6 +38,7 @@ class _Main {
 
 ```js
 var FrenchStemmer = require('french-stemmer.common.js').FrenchStemmer;
+var stemmer = new FrenchStemer;
 ```
 
 ### Use from require.js
