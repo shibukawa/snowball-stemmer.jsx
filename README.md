@@ -37,7 +37,7 @@ class _Main {
 ### Use from node.js
 
 ```js
-var FrenchStemmer = require('french-stemmer.common.js').FrenchStemmer;
+var FrenchStemmer = require('snowball-stemmer.jsx/dest/french-stemmer.common.js').FrenchStemmer;
 ```
 
 ### Use from require.js
